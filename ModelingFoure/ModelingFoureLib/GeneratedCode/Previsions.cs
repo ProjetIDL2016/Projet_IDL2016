@@ -19,7 +19,12 @@ public class Previsions
 
 	public virtual Point ajoutPoint(Instant instant, double latitude, double longitude, double pression)
 	{
-		instant.Point.
+        Point unPoint = new Point();
+        unPoint.Latitude = latitude;
+        unPoint.Longitude = longitude;
+        unPoint.Pression = pression;
+        instant.lesPoints.ToList<Point>().Add(unPoint);
+        return unPoint;
 	}
 
 	public virtual Instant ajoutInstant(int annee, int mois, int jour, int heure)

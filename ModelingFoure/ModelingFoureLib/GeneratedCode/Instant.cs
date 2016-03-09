@@ -35,7 +35,7 @@ public class Instant
 		set;
 	}
 
-	public virtual IEnumerable<Point> Point
+	public virtual IEnumerable<Point> lesPoints
 	{
 		get;
 		set;
