@@ -2,14 +2,14 @@
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="41d0e1ec-efe5-4e9a-8469-3d44b3a26e33" name="UMLClassDiagram1" linkedPackageId="85ed9988-88b5-409f-8991-11c5c7608b4a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" name="Zone" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" name="Point" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="30d92237-0867-41b3-8122-cb30c0569f57" />
         <targetEnds>
-          <association Id="7e2e2e44-7e71-4657-9b35-2ad45d7ca743" isDerived="false" sourceEndRoleName="Prevision" targetEndRoleName="leVent" isLeaf="false" name="leVent" isAbstract="false">
+          <association Id="7e2e2e44-7e71-4657-9b35-2ad45d7ca743" isDerived="false" sourceEndRoleName="Point" targetEndRoleName="leVent" isLeaf="false" name="leVent" isAbstract="false">
             <classMoniker Id="9ebebbaa-f92f-4fe2-ad35-82ca33ada9bc" LastKnownName="Vent" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="4811234f-4171-491f-b8b6-8a4c645a78e4" name="Prevision" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="4811234f-4171-491f-b8b6-8a4c645a78e4" name="Point" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="a029f572-a204-4d29-a400-5d411bcb5dc7" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -58,8 +58,8 @@
       <class Id="f1c4e27f-a739-4f74-9a51-606d1ccf82a7" name="Instant" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d4b2cee7-cf08-4bfa-886a-ff2bafa63e8e" />
         <targetEnds>
-          <association Id="795f704f-7283-4790-b69c-7c91e6bf45cc" isDerived="false" sourceEndRoleName="Intervalle" targetEndRoleName="Prevision" isLeaf="false" name="lesZones" isAbstract="false">
-            <classMoniker Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" LastKnownName="Zone" />
+          <association Id="795f704f-7283-4790-b69c-7c91e6bf45cc" isDerived="false" sourceEndRoleName="Intervalle" targetEndRoleName="Point" isLeaf="false" name="lesZones" isAbstract="false">
+            <classMoniker Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" LastKnownName="Point" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="993101bb-d12c-4fa7-9ca6-e18e64132904" name="Intervalle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -77,7 +77,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="82b852fb-a3c8-4489-8146-436e5e7710c4" name="Prevision" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="82b852fb-a3c8-4489-8146-436e5e7710c4" name="Point" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="0c7bea38-0044-415c-93dc-1b4b5f289f4e" name="Lower" value="*">
                       <elementDefinition Id="61ed4c96-04ee-4cd1-b82c-b33cd925db86" />
@@ -211,44 +211,44 @@
           </association>
         </targetEnds>
         <ownedOperationsInternal>
-          <operation Id="1e95ca09-552f-4a58-b013-5943d3e2b114" name="ajoutZone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="1e95ca09-552f-4a58-b013-5943d3e2b114" name="ajoutPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="eb51eadf-45ea-41fb-b220-7f059db412ca" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="3d3280d1-756b-4524-9af2-17c2e6430b54" direction="Return">
+                <parameter Id="3d3280d1-756b-4524-9af2-17c2e6430b54" direction="Return" isUnique="false">
                   <elementDefinition Id="dfe7a9c6-942b-4938-9ef4-f34bb14cdd35" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="a157e615-d6c3-4e09-9774-ae07c0cd163a" name="instant" direction="In">
-                  <elementDefinition Id="bee2a5cc-adcc-4f90-9069-7dc9c459dc5b" />
+                <parameter Id="ee0c6e77-0592-428e-9fff-9797fe3a70d6" name="instant" direction="In" isUnique="false">
+                  <elementDefinition Id="4a90cd07-86e5-43c6-a9a9-e00338cec60e" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="a340578d-53d7-4ac3-91cf-b19cdae1a5c6" LastKnownName="Instant" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="39532eb9-60e7-4760-963e-b4632ceb11b6" name="latitude" direction="In">
-                  <elementDefinition Id="2f7ced91-0c19-464c-a6d8-de3f82f5d50b" />
+                <parameter Id="31f6691f-9b02-453b-abe8-6493a51866fa" name="latitude" direction="In" isUnique="false">
+                  <elementDefinition Id="9168d1f8-ac44-424b-90a0-a9f622ce2c40" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="8f94170a-2430-453d-9649-29ec58c554c8" name="longitude" direction="In">
-                  <elementDefinition Id="75a275b8-f0e2-4973-bf38-743c2e56392a" />
+                <parameter Id="068c7a69-60cc-476a-baa1-39d0f1d2bda0" name="longitude" direction="In" isUnique="false">
+                  <elementDefinition Id="5ddd3f61-a775-4440-9fe6-4bb9d1871204" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="7e149874-316e-43d8-aa56-c58ab8b67cef" name="pression" direction="In">
-                  <elementDefinition Id="6af29aa8-3096-48f7-9e44-c04cbbf913f8" />
+                <parameter Id="da56de15-b2d6-4073-be3d-ad6034e5e380" name="pression" direction="In" isUnique="false">
+                  <elementDefinition Id="f655a082-8258-4dd3-b706-032c876281c1" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                   </type_NamedElement>
@@ -324,7 +324,7 @@
                 <parameter Id="6b4f572c-6fe9-4c26-948b-e9b72497ff5f" name="donnee" direction="In">
                   <elementDefinition Id="ee5a7d4e-90e5-4a01-81bc-a1c87d281c18" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -377,7 +377,7 @@
                 <parameter Id="bb2b2eff-f2db-40bf-8cd0-29d4f58f814c" name="donnee" direction="In">
                   <elementDefinition Id="7a45871f-c82d-4a2a-9170-ee28f6ced7ab" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -385,42 +385,42 @@
                 <parameter Id="faf60e47-a20d-406a-b987-185029d3b48c" name="nouvelle" direction="In">
                   <elementDefinition Id="b03675f1-c92f-4570-acc6-fe70b219813b" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="e836d69c-304e-4125-a28c-04a060661e78" name="getZone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="e836d69c-304e-4125-a28c-04a060661e78" name="getPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="1f97ae03-4497-4f50-92d0-863d6d1cf7e9" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="f75e94a8-718f-4867-987b-56b9b8af26c9" direction="Return">
+                <parameter Id="f75e94a8-718f-4867-987b-56b9b8af26c9" direction="Return" isUnique="false">
                   <elementDefinition Id="cf377688-0416-4128-bc5a-dda598e279c8" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="c899c1ed-3063-4295-8a44-85d148815603" LastKnownName="Zone" />
+                    <referencedTypeMoniker Id="c899c1ed-3063-4295-8a44-85d148815603" LastKnownName="Point" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="d1ec4800-f582-478c-a0eb-c71e33861cf4" name="instant" direction="In">
-                  <elementDefinition Id="1bdb92d4-056b-4775-a5dd-9ae2bef4f9a0" />
+                <parameter Id="d05c414e-5341-425b-8454-4739dd989371" name="instant" direction="In" isUnique="false">
+                  <elementDefinition Id="ea8f43f2-8e4b-43fa-8480-df9452364e50" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="a340578d-53d7-4ac3-91cf-b19cdae1a5c6" LastKnownName="Instant" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="a4608202-72a3-4106-bdc5-aa39ca7e72c7" name="latitude" direction="In">
-                  <elementDefinition Id="92f31b84-e41b-4aca-8529-880e70d5f3c3" />
+                <parameter Id="4c0d0f0b-39db-4230-b269-3768791d2135" name="latitude" direction="In" isUnique="false">
+                  <elementDefinition Id="bf1e5a83-1e21-46d0-bbb3-faba99ec1c8f" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="018bbee5-200c-4fa8-b2e9-76e2bf1867f1" name="longitude" direction="In">
-                  <elementDefinition Id="6688539c-e72b-45c3-b319-26096e594d86" />
+                <parameter Id="1bcb91ae-e647-41cc-a913-bc7deee200d7" name="longitude" direction="In" isUnique="false">
+                  <elementDefinition Id="1159f8d9-b7bc-4451-9a4b-2414f854deee" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                   </type_NamedElement>
@@ -451,7 +451,7 @@
                 <parameter Id="ef950407-e452-49e7-b421-e641362921fe" name="donnee" direction="In">
                   <elementDefinition Id="12bfa5d6-e687-47ad-925a-d2d6353eea08" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -509,7 +509,7 @@
                 <parameter Id="dce816be-f8e7-4896-a3e7-c8d69f5aa6a3" name="donnee" direction="In">
                   <elementDefinition Id="9a004b77-1bbe-4983-9a5c-d2ca6137ba4c" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -599,7 +599,7 @@
                 <parameter Id="e182b7be-3352-4a1e-9da8-832e4417df36" name="donnee" direction="In">
                   <elementDefinition Id="bf768dbc-3d94-494a-9589-b8c262066ec0" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -637,6 +637,43 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="f9516778-b9cd-4662-82cd-aed468327eca" name="getZone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="665c57cd-8ca5-4f65-bff9-380feefdae6e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e954d950-ff1d-41c4-a151-4b2fd7053f5d" name="instant" direction="In">
+                  <elementDefinition Id="111837e9-bdee-44ae-b18e-bf7274aea484" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a340578d-53d7-4ac3-91cf-b19cdae1a5c6" LastKnownName="Instant" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="028133ce-a3a1-441e-a581-4773788a6829" name="X1" direction="In">
+                  <elementDefinition Id="26255b37-47a9-480e-82ec-8101e5677bb7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="37ce1497-4cad-4af4-b85e-7fb1aa2920c4" name="X2" direction="In">
+                  <elementDefinition Id="0aa45f88-cae9-473d-ba8b-377b11a5474e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Point" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a8d6bad5-aac5-4284-8ed0-fca7ffe699d4" direction="Return">
+                  <elementDefinition Id="0436f442-087b-4c42-8b81-57efb47c349a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="97873065-ebf6-4ab4-8dd2-18c11f3ad034" LastKnownName="ModelingFoure::Point[]" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -651,7 +688,7 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" name="Zone" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Zone">
+      <referencedType Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" name="Point" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Point">
         <elementDefinition Id="30d92237-0867-41b3-8122-cb30c0569f57" />
       </referencedType>
     </packageHasNamedElement>
@@ -686,7 +723,7 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="c899c1ed-3063-4295-8a44-85d148815603" name="Zone" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Zone">
+      <referencedType Id="c899c1ed-3063-4295-8a44-85d148815603" name="Point" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Point">
         <elementDefinition Id="30d92237-0867-41b3-8122-cb30c0569f57" />
       </referencedType>
     </packageHasNamedElement>
@@ -713,6 +750,11 @@
     <packageHasNamedElement>
       <referencedType Id="e7c268e2-4d6e-4fe8-a386-77bdc64e5701" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
         <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="97873065-ebf6-4ab4-8dd2-18c11f3ad034" name="ModelingFoure::Point[]" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Point[]">
+        <elementDefinition Id="6b251283-4f8c-4510-ae65-bd644d11d570" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
