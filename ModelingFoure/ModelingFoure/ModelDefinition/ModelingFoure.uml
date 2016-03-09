@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="326c535b-a027-4bd2-8000-bd5895c03b86"
   name="ModelingFoure" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -21,7 +21,7 @@
     <packageHasNamedElement>
       <class
         Id="30d92237-0867-41b3-8122-cb30c0569f57"
-        name="Donnee"
+        name="Zone"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -217,7 +217,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -279,11 +279,11 @@
             sourceEndRoleName="Intervalle"
             targetEndRoleName="Prevision"
             isLeaf="false"
-            name="lesPrevisions"
+            name="lesZones"
             isAbstract="false">
             <classMoniker
               Id="30d92237-0867-41b3-8122-cb30c0569f57"
-              LastKnownName="Donnee"
+              LastKnownName="Zone"
               LastKnownLocation="ModelingFoure.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -646,7 +646,7 @@
         <ownedOperationsInternal>
           <operation
             Id="eb51eadf-45ea-41fb-b220-7f059db412ca"
-            name="ajoutDonnee"
+            name="ajoutZone"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -660,7 +660,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -836,7 +836,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -897,7 +897,7 @@
           </operation>
           <operation
             Id="0cdc49d2-268e-4f76-ba2d-4c33c047c972"
-            name="modifierDonnee"
+            name="modifierZone"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -924,7 +924,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -937,7 +937,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -946,7 +946,7 @@
           </operation>
           <operation
             Id="1f97ae03-4497-4f50-92d0-863d6d1cf7e9"
-            name="getDonnee"
+            name="getZone"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -960,7 +960,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1048,7 +1048,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1119,7 +1119,7 @@
           </operation>
           <operation
             Id="6d164934-b7ec-466e-addf-d65739214c5e"
-            name="modifierDonnee"
+            name="modifierZone"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1146,7 +1146,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1296,7 +1296,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="30d92237-0867-41b3-8122-cb30c0569f57"
-                      LastKnownName="Donnee"
+                      LastKnownName="Zone"
                       LastKnownLocation="ModelingFoure.uml" />
                   </type_NamedElement>
                 </parameter>

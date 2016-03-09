@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="41d0e1ec-efe5-4e9a-8469-3d44b3a26e33" name="UMLClassDiagram1" linkedPackageId="85ed9988-88b5-409f-8991-11c5c7608b4a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="41d0e1ec-efe5-4e9a-8469-3d44b3a26e33" name="UMLClassDiagram1" linkedPackageId="85ed9988-88b5-409f-8991-11c5c7608b4a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" name="Donnee" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" name="Zone" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="30d92237-0867-41b3-8122-cb30c0569f57" />
         <targetEnds>
           <association Id="7e2e2e44-7e71-4657-9b35-2ad45d7ca743" isDerived="false" sourceEndRoleName="Prevision" targetEndRoleName="leVent" isLeaf="false" name="leVent" isAbstract="false">
@@ -58,8 +58,8 @@
       <class Id="f1c4e27f-a739-4f74-9a51-606d1ccf82a7" name="Instant" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d4b2cee7-cf08-4bfa-886a-ff2bafa63e8e" />
         <targetEnds>
-          <association Id="795f704f-7283-4790-b69c-7c91e6bf45cc" isDerived="false" sourceEndRoleName="Intervalle" targetEndRoleName="Prevision" isLeaf="false" name="lesPrevisions" isAbstract="false">
-            <classMoniker Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" LastKnownName="Donnee" />
+          <association Id="795f704f-7283-4790-b69c-7c91e6bf45cc" isDerived="false" sourceEndRoleName="Intervalle" targetEndRoleName="Prevision" isLeaf="false" name="lesZones" isAbstract="false">
+            <classMoniker Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" LastKnownName="Zone" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="993101bb-d12c-4fa7-9ca6-e18e64132904" name="Intervalle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -211,14 +211,14 @@
           </association>
         </targetEnds>
         <ownedOperationsInternal>
-          <operation Id="1e95ca09-552f-4a58-b013-5943d3e2b114" name="ajoutDonnee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="1e95ca09-552f-4a58-b013-5943d3e2b114" name="ajoutZone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="eb51eadf-45ea-41fb-b220-7f059db412ca" />
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter Id="3d3280d1-756b-4524-9af2-17c2e6430b54" direction="Return">
                   <elementDefinition Id="dfe7a9c6-942b-4938-9ef4-f34bb14cdd35" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -324,7 +324,7 @@
                 <parameter Id="6b4f572c-6fe9-4c26-948b-e9b72497ff5f" name="donnee" direction="In">
                   <elementDefinition Id="ee5a7d4e-90e5-4a01-81bc-a1c87d281c18" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -362,7 +362,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="2bee6592-7426-4390-8e85-c834798d551d" name="modifierDonnee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="2bee6592-7426-4390-8e85-c834798d551d" name="modifierZone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="0cdc49d2-268e-4f76-ba2d-4c33c047c972" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -377,7 +377,7 @@
                 <parameter Id="bb2b2eff-f2db-40bf-8cd0-29d4f58f814c" name="donnee" direction="In">
                   <elementDefinition Id="7a45871f-c82d-4a2a-9170-ee28f6ced7ab" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -385,20 +385,20 @@
                 <parameter Id="faf60e47-a20d-406a-b987-185029d3b48c" name="nouvelle" direction="In">
                   <elementDefinition Id="b03675f1-c92f-4570-acc6-fe70b219813b" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="e836d69c-304e-4125-a28c-04a060661e78" name="getDonnee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="e836d69c-304e-4125-a28c-04a060661e78" name="getZone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="1f97ae03-4497-4f50-92d0-863d6d1cf7e9" />
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter Id="f75e94a8-718f-4867-987b-56b9b8af26c9" direction="Return">
                   <elementDefinition Id="cf377688-0416-4128-bc5a-dda598e279c8" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="c899c1ed-3063-4295-8a44-85d148815603" LastKnownName="Donnee" />
+                    <referencedTypeMoniker Id="c899c1ed-3063-4295-8a44-85d148815603" LastKnownName="Zone" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -451,7 +451,7 @@
                 <parameter Id="ef950407-e452-49e7-b421-e641362921fe" name="donnee" direction="In">
                   <elementDefinition Id="12bfa5d6-e687-47ad-925a-d2d6353eea08" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -494,7 +494,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="fbee55f2-e2a6-44b5-b655-8f60fec571c1" name="modifierDonnee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="fbee55f2-e2a6-44b5-b655-8f60fec571c1" name="modifierZone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="6d164934-b7ec-466e-addf-d65739214c5e" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -509,7 +509,7 @@
                 <parameter Id="dce816be-f8e7-4896-a3e7-c8d69f5aa6a3" name="donnee" direction="In">
                   <elementDefinition Id="9a004b77-1bbe-4983-9a5c-d2ca6137ba4c" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -599,7 +599,7 @@
                 <parameter Id="e182b7be-3352-4a1e-9da8-832e4417df36" name="donnee" direction="In">
                   <elementDefinition Id="bf768dbc-3d94-494a-9589-b8c262066ec0" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Zone" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -651,7 +651,7 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" name="Donnee" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Donnee">
+      <referencedType Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" name="Zone" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Zone">
         <elementDefinition Id="30d92237-0867-41b3-8122-cb30c0569f57" />
       </referencedType>
     </packageHasNamedElement>
@@ -686,7 +686,7 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="c899c1ed-3063-4295-8a44-85d148815603" name="Donnee" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Donnee">
+      <referencedType Id="c899c1ed-3063-4295-8a44-85d148815603" name="Zone" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Zone">
         <elementDefinition Id="30d92237-0867-41b3-8122-cb30c0569f57" />
       </referencedType>
     </packageHasNamedElement>
