@@ -39,14 +39,14 @@
         <classShapeMoniker Id="1f6db1ef-23d6-42d2-9eae-113de44f46ee" />
       </nodes>
     </associationConnector>
-    <classShape Id="1c3b869c-a679-4b79-94fa-407547f472bd" absoluteBounds="0.875, 1.625, 2.25, 1.5429687152306237" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="1c3b869c-a679-4b79-94fa-407547f472bd" absoluteBounds="0.875, 1.625, 4.875, 2.0234374503294625" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="4f3d6959-183e-45a5-bcb6-e88ea65ddf6f" LastKnownName="Previsions" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="a6bec4c8-768c-4105-9ee0-dda4657ad93f" absoluteBounds="0.89, 2.015, 2.2199999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="c5d4625c-832c-417e-8af9-59ccbf6a791a" absoluteBounds="0.89, 2.2261718675494193, 2.2199999999999998, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="a6bec4c8-768c-4105-9ee0-dda4657ad93f" absoluteBounds="0.89, 2.015, 4.8450000000000006, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="c5d4625c-832c-417e-8af9-59ccbf6a791a" absoluteBounds="0.89, 2.2261718675494193, 4.8450000000000006, 1.3222655827800431" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(1.75 : 3.16796871523062); (1.75 : 4.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(1.75 : 3.64843745032946); (1.75 : 4.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="86291f84-ecce-416c-9e1a-bb0b1ab1d1b2" />
       <relativeChildShapes />
       <nodes>

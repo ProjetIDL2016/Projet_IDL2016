@@ -902,7 +902,221 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="51a77d36-d30c-4b23-a5f8-6f96bef5596c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7a45871f-c82d-4a2a-9170-ee28f6ced7ab"
+                  name="donnee"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="30d92237-0867-41b3-8122-cb30c0569f57"
+                      LastKnownName="Donnee"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b03675f1-c92f-4570-acc6-fe70b219813b"
+                  name="nouvelle"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="30d92237-0867-41b3-8122-cb30c0569f57"
+                      LastKnownName="Donnee"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1f97ae03-4497-4f50-92d0-863d6d1cf7e9"
+            name="getDonnee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cf377688-0416-4128-bc5a-dda598e279c8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="30d92237-0867-41b3-8122-cb30c0569f57"
+                      LastKnownName="Donnee"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1bdb92d4-056b-4775-a5dd-9ae2bef4f9a0"
+                  name="instant"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d4b2cee7-cf08-4bfa-886a-ff2bafa63e8e"
+                      LastKnownName="Instant"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92f31b84-e41b-4aca-8529-880e70d5f3c3"
+                  name="latitude"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ed714c8c-a072-427d-8852-779147f21818"
+                      LastKnownName="double"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6688539c-e72b-45c3-b319-26096e594d86"
+                  name="longitude"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ed714c8c-a072-427d-8852-779147f21818"
+                      LastKnownName="double"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cade6f0c-0eff-433b-a7c1-7b9d4447c299"
+            name="getVent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1fe8e08-3608-4a54-8a87-47a13257a865"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="41e484e6-f188-48d5-b56e-4e101f7106a5"
+                      LastKnownName="Vent"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="432936b3-3fe9-4313-90de-be5890d898c3"
+                  name="instant"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d4b2cee7-cf08-4bfa-886a-ff2bafa63e8e"
+                      LastKnownName="Instant"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="12bfa5d6-e687-47ad-925a-d2d6353eea08"
+                  name="donnee"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="30d92237-0867-41b3-8122-cb30c0569f57"
+                      LastKnownName="Donnee"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6cb0cf73-fb3f-4714-a116-18f814f2cb1e"
+            name="getVent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bcb78ae5-705e-4ada-859e-b914b86182d9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="41e484e6-f188-48d5-b56e-4e101f7106a5"
+                      LastKnownName="Vent"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24969bd9-6446-4214-853a-75f594998c56"
+                  name="instant"
+                  direction="In">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d4b2cee7-cf08-4bfa-886a-ff2bafa63e8e"
+                      LastKnownName="Instant"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9dd35fe0-1717-4530-bb93-199641e54f84"
+                  name="latitude"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ed714c8c-a072-427d-8852-779147f21818"
+                      LastKnownName="double"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b87e7227-b7ec-49bc-9627-2053125129d4"
+                  name="longitude"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ed714c8c-a072-427d-8852-779147f21818"
+                      LastKnownName="double"
+                      LastKnownLocation="ModelingFoure.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>

@@ -364,6 +364,135 @@
           </operation>
           <operation Id="2bee6592-7426-4390-8e85-c834798d551d" name="modifierDonnee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="0cdc49d2-268e-4f76-ba2d-4c33c047c972" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9a30387c-c823-4cc7-b24b-83d3de2d5e61" direction="Return">
+                  <elementDefinition Id="51a77d36-d30c-4b23-a5f8-6f96bef5596c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c1dbdff2-06d8-42bf-bfd1-ece5e8f4db2b" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bb2b2eff-f2db-40bf-8cd0-29d4f58f814c" name="donnee" direction="In">
+                  <elementDefinition Id="7a45871f-c82d-4a2a-9170-ee28f6ced7ab" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="faf60e47-a20d-406a-b987-185029d3b48c" name="nouvelle" direction="In">
+                  <elementDefinition Id="b03675f1-c92f-4570-acc6-fe70b219813b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e836d69c-304e-4125-a28c-04a060661e78" name="getDonnee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1f97ae03-4497-4f50-92d0-863d6d1cf7e9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f75e94a8-718f-4867-987b-56b9b8af26c9" direction="Return">
+                  <elementDefinition Id="cf377688-0416-4128-bc5a-dda598e279c8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c899c1ed-3063-4295-8a44-85d148815603" LastKnownName="Donnee" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d1ec4800-f582-478c-a0eb-c71e33861cf4" name="instant" direction="In">
+                  <elementDefinition Id="1bdb92d4-056b-4775-a5dd-9ae2bef4f9a0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a340578d-53d7-4ac3-91cf-b19cdae1a5c6" LastKnownName="Instant" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a4608202-72a3-4106-bdc5-aa39ca7e72c7" name="latitude" direction="In">
+                  <elementDefinition Id="92f31b84-e41b-4aca-8529-880e70d5f3c3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="018bbee5-200c-4fa8-b2e9-76e2bf1867f1" name="longitude" direction="In">
+                  <elementDefinition Id="6688539c-e72b-45c3-b319-26096e594d86" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e7d22df8-44f6-4548-862f-394d227386f8" name="getVent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cade6f0c-0eff-433b-a7c1-7b9d4447c299" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d0f8c4f2-face-4450-947a-b07d787d7ed8" direction="Return">
+                  <elementDefinition Id="c1fe8e08-3608-4a54-8a87-47a13257a865" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1e73be65-668e-4c8a-b65e-3f65757ad20e" LastKnownName="Vent" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="121efc8d-1caf-4d84-a971-373f80a03d43" name="instant" direction="In">
+                  <elementDefinition Id="432936b3-3fe9-4313-90de-be5890d898c3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a340578d-53d7-4ac3-91cf-b19cdae1a5c6" LastKnownName="Instant" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ef950407-e452-49e7-b421-e641362921fe" name="donnee" direction="In">
+                  <elementDefinition Id="12bfa5d6-e687-47ad-925a-d2d6353eea08" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="85bbea66-3c05-40ed-8f05-4c5bb6581486" LastKnownName="Donnee" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9d409ad9-ebd8-44d3-9d8e-ead012912da2" name="getVent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6cb0cf73-fb3f-4714-a116-18f814f2cb1e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="285e160b-17d0-434f-a19c-99a644d6a3ad" direction="Return">
+                  <elementDefinition Id="bcb78ae5-705e-4ada-859e-b914b86182d9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f92812a4-c33f-4bb2-9da4-d037dbb5594a" LastKnownName="Vent" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="54ad2d13-8fbe-44a7-9495-a0e2e6f26f95" name="instant" direction="In">
+                  <elementDefinition Id="24969bd9-6446-4214-853a-75f594998c56" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a340578d-53d7-4ac3-91cf-b19cdae1a5c6" LastKnownName="Instant" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="85a95d87-9aa4-4d66-93cd-2b232ca0ce6c" name="latitude" direction="In">
+                  <elementDefinition Id="9dd35fe0-1717-4530-bb93-199641e54f84" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dcdf8486-4205-430b-bb9e-33bab279c55b" name="longitude" direction="In">
+                  <elementDefinition Id="b87e7227-b7ec-49bc-9627-2053125129d4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -405,6 +534,26 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="bd9b7ec4-1df7-40d3-8f37-ebb53d9b7020" name="Vent" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Vent">
+        <elementDefinition Id="41e484e6-f188-48d5-b56e-4e101f7106a5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c1dbdff2-06d8-42bf-bfd1-ece5e8f4db2b" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c899c1ed-3063-4295-8a44-85d148815603" name="Donnee" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Donnee">
+        <elementDefinition Id="30d92237-0867-41b3-8122-cb30c0569f57" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1e73be65-668e-4c8a-b65e-3f65757ad20e" name="Vent" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Vent">
+        <elementDefinition Id="41e484e6-f188-48d5-b56e-4e101f7106a5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f92812a4-c33f-4bb2-9da4-d037dbb5594a" name="Vent" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Vent">
         <elementDefinition Id="41e484e6-f188-48d5-b56e-4e101f7106a5" />
       </referencedType>
     </packageHasNamedElement>
