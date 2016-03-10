@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingMarrec", "ModelingMarrec\ModelingMarrec.modelproj", "{F81BD633-102A-471E-BD5B-8C9C1713F2F3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conversion", "Conversion", "{6E6D8909-0F3B-4D70-914F-B2772DE89B43}"
+	ProjectSection(SolutionItems) = preProject
+		Conversion.cs = Conversion.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
