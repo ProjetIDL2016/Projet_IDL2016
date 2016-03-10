@@ -28,17 +28,12 @@ namespace TestUnitaires
             direction[0] = 180;
             direction[1] = 90;
 
-            u[0] = conversion.Conversion.obtenirU(direction[0], vitesse[0]);
-            u[1] = conversion.Conversion.obtenirU(direction[1], vitesse[1]);
-            v[0] = conversion.Conversion.obtenirV(direction[0], vitesse[0]);
-            v[1] = conversion.Conversion.obtenirV(direction[1], vitesse[1]);
-
             pression[0] = 1015;
             pression[1] = 1015;
 
 
             e = new Edition();
-            p = e.creerPrevision(47, 58, 48, 57, debut, fin, u, v, pression, TypeVitesseVent.KilometreHeure);
+            p = e.creerPrevision(47, 58, 48, 57, debut, fin, vitesse, direction, pression, TypeVitesseVent.KilometreHeure);
 
             ResultatObtenu = p.getVent(2016, 3, 10, 11, 47, 58).ToString();
             ResultatAttendu = "10/03/2016 11h : lat: 47 long: 57 p: 1015 dir: 180 v: 50\n"
