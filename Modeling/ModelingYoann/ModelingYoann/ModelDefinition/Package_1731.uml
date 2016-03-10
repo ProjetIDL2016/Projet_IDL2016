@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bbe6c1b9-0e68-475d-abaf-2da1771b47d5"
+  name="edition" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="14c6f778-4dc4-46bb-b3aa-86ae065b2583"
+        name="TypeVitesseVent"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0a824f9b-0a4f-4d5b-ab65-88276f86689f"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="942d2a97-19d0-4789-a40f-ff68cf901d0f">
+                <propertyInstance
+                  Id="4c24ab44-40be-4e86-bf79-8ffa2feb716e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="317a05d5-1893-4d65-a5ac-0e67b9223118">
+                <propertyInstance
+                  Id="a431f1bb-d463-43cb-b8b2-80c354c1f4ba"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eea2e355-3da1-4d0c-b932-341ee00011e0">
+                <propertyInstance
+                  Id="4359de71-892b-4d17-86d9-3b4d9583b444"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="f612966e-d3ed-443b-8d46-726eea3b337a"
+            name="KilometreHeure">
+            <specification>
+              <literalInteger
+                Id="335b8a97-67a6-4649-8923-7a2d1b1fb5e0"
+                name="Integer"
+                value="0" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="e1149f0f-c4d6-4fff-b526-32bed71126f4"
+            name="Noeud">
+            <specification>
+              <literalInteger
+                Id="5b142c3d-daee-4bb1-8b95-0026580e5d44"
+                name="Integer"
+                value="1" />
+            </specification>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="c5b362e4-e4e0-4144-b899-6dd7e83935a7"
+            name="Beaufort">
+            <specification>
+              <literalInteger
+                Id="b3479380-8be5-4c75-b839-7e297f41a8eb"
+                name="Integer"
+                value="2" />
+            </specification>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ad7d2d53-b13d-43c3-b55c-3ee19a7ed3ef"
+        name="Edition"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7dca5cb3-3ff0-40d1-9e61-380aac6b4677"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f279f0b3-387a-42b3-963b-791dd8f91420">
+                <propertyInstance
+                  Id="05edef20-4c0b-4988-87ed-3f3bdfaa7cd3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e15cd6de-5a7c-4590-9019-174dfcc0cffd">
+                <propertyInstance
+                  Id="51cd96bc-e936-4870-95d6-b44d3ca449a7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10dc53e1-0336-4ff3-8d1a-50de879820e5">
+                <propertyInstance
+                  Id="103eb1e2-43d9-4c49-bc2c-a5ec30e10b1c"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef56d98c-df94-4aed-8672-69a7344b69ed">
+                <propertyInstance
+                  Id="7c886341-8c40-4b1d-a3ef-077bfdacfeac"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3d27a7d-61a7-4934-beac-66e0225191d7">
+                <propertyInstance
+                  Id="1e9f261c-6380-422f-a542-b79b357448a9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4fd7f6b7-a134-48ed-a79b-260c0b716468"
+            name="creerPrevision"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2b204c35-983d-4f40-ab1c-32a515b48ba3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64296511-abb3-47d0-9d13-3af63ed7cb9a">
+                    <propertyInstance
+                      Id="95728c88-e2f2-4b07-b060-ddc4985246d3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff377685-e957-4ffe-887f-d11fbe105e2e">
+                    <propertyInstance
+                      Id="3838e3b3-d76f-498f-9742-bc6fa2d01313"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5f1705a-3020-4094-8a82-2e77323bc547">
+                    <propertyInstance
+                      Id="8c82190e-f34b-4675-a60d-eac8539c508d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb4d44a8-d641-4556-98de-3f1f457c4729">
+                    <propertyInstance
+                      Id="52f27c29-ffe4-4b93-a407-80f422e1e1be"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72308f06-8069-4163-80ba-4add8775e468">
+                    <propertyInstance
+                      Id="666ddb79-a426-4508-8853-d3850c35813d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="573df0da-61b9-4ad8-ace1-f3e85ebf2b66">
+                    <propertyInstance
+                      Id="99fce9f4-7b45-46e3-9417-73ec91f19de3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a8a9264a-d0f8-465b-9f57-d161137bc6f8"
+                  name="Latitude1"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c5d6670d-c2ff-4981-a412-3453b40987f4"
+                      LastKnownName="double"
+                      LastKnownLocation="ModelingYoann.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9abca62a-7eb2-490f-987d-f5513ff3e8b1"
+                  name="Longitude1"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c5d6670d-c2ff-4981-a412-3453b40987f4"
+                      LastKnownName="double"
+                      LastKnownLocation="ModelingYoann.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d08d4f0-18db-46f2-8de4-f4f1d6791817"
+                  name="Latitude2"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c5d6670d-c2ff-4981-a412-3453b40987f4"
+                      LastKnownName="double"
+                      LastKnownLocation="ModelingYoann.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b201035b-01f5-4082-9569-49928a9564c2"
+                  name="Longitude2"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c5d6670d-c2ff-4981-a412-3453b40987f4"
+                      LastKnownName="double"
+                      LastKnownLocation="ModelingYoann.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="543371ee-1cb0-490a-a28e-4ab24d32e3a5"
+                  name="dateDebut"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c749facc-9b5b-4ee1-bc15-4271e6b18d35"
+                      LastKnownName="DateTime[]"
+                      LastKnownLocation="Package_0907.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="49f520e5-524c-4130-b542-847986abcf07"
+                  name="dateFin"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c749facc-9b5b-4ee1-bc15-4271e6b18d35"
+                      LastKnownName="DateTime[]"
+                      LastKnownLocation="Package_0907.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b75cdae4-bc87-43dc-83b3-84087064ca29"
+                  name="vitesse"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5e3e5e17-2cc4-4fdf-98ee-012811bd02ea"
+                      LastKnownName="double[]"
+                      LastKnownLocation="Package_0907.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7ffbd856-18c6-4057-8213-0252b8177a61"
+                  name="direction"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5e3e5e17-2cc4-4fdf-98ee-012811bd02ea"
+                      LastKnownName="double[]"
+                      LastKnownLocation="Package_0907.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8ddacda4-7c4d-4074-8509-682867c0d15c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3971da89-bdb9-45ac-892f-9c34dbce195c"
+                      LastKnownName="Previsions"
+                      LastKnownLocation="ModelingYoann.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6df4548c-6732-4fbb-b82f-45a9628fcc9a"
+                  name="pression"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5e3e5e17-2cc4-4fdf-98ee-012811bd02ea"
+                      LastKnownName="double[]"
+                      LastKnownLocation="Package_0907.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="16b2f519-27e3-424b-9816-6eacdbf4d048"
+                  name="type"
+                  direction="In">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="14c6f778-4dc4-46bb-b3aa-86ae065b2583"
+                      LastKnownName="TypeVitesseVent"
+                      LastKnownLocation="Package_1731.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

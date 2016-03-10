@@ -22,7 +22,29 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="ModelDefinition\Package_0824.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0907.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1643.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1656.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1731.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
+    <Content Include="Diagramme_Edition.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Diagramme_Edition.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Diagramme_Edition.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\ModelingYoann.uml">
       <SubType>Content</SubType>
     </Content>
