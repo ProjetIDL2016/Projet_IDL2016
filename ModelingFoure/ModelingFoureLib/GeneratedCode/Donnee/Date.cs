@@ -4,7 +4,7 @@
 //     Les modifications apportées à ce fichier seront perdues si le code est régénéré.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace Donnee
+namespace donnee
 {
 	using System;
 	using System.Collections.Generic;
@@ -79,7 +79,7 @@ namespace Donnee
                     {
                         res += "0";
                     }
-                    res += this.Mois + "/" + this.Annee + " " + this.Heure + "h : " + unPoint.ToString() + Environment.NewLine;
+                    res += this.Mois + "/" + this.Annee + " à " + this.Heure + "h : " + unPoint.ToString() + Environment.NewLine;
                 }
             }
             return res;

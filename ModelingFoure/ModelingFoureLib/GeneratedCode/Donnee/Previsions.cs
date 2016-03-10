@@ -4,7 +4,7 @@
 //     Les modifications apportées à ce fichier seront perdues si le code est régénéré.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace Donnee
+namespace donnee
 {
 	using System;
 	using System.Collections.Generic;
@@ -13,17 +13,13 @@ namespace Donnee
 
 	public class Previsions
 	{
-        public Previsions ()
-        {
-
-        }
 		public virtual IList<Date> lesDates
 		{
 			get;
 			set;
 		}
 
-		public virtual bool ajoutPoint(int annee, int mois, int jour, int heure, double latitude, double longitude, double pression, double direction, double u, double v, double vitesse)
+		public virtual bool ajoutPoint(int annee, int mois, int jour, int heure, double latitude, double longitude, double pression, double u, double v)
 		{
             Date uneDate = this.rechercherDate(annee,mois,jour,heure);
             Point unPoint;
@@ -31,7 +27,7 @@ namespace Donnee
             if (uneDate == null)
             {
                 uneDate = new Date(annee, mois, jour, heure);
-                unVent = new Vent(direction, u, v, vitesse);
+                unVent = new Vent(u, v);
                 unPoint = new Point(latitude, longitude, unVent, pression);
                 uneDate.lesPoints = new List<Point>();
                 uneDate.lesPoints.Add(unPoint);
@@ -43,7 +39,7 @@ namespace Donnee
                 unPoint = uneDate.recherchePoint(latitude, longitude);
                 if (unPoint == null)
                 {
-                    unVent = new Vent(direction, u, v, vitesse);
+                    unVent = new Vent(u, v);
                     unPoint = new Point(latitude, longitude, unVent, pression);
                     uneDate.lesPoints.Add(unPoint);
                     return true;
@@ -64,7 +60,7 @@ namespace Donnee
             return false;
         }
 
-		public virtual bool modifierPoint(int annee, int mois, int jour, int heure, double latitude, double longitude, double pression, double direction, double u, double v, double vitesse)
+		public virtual bool modifierPoint(int annee, int mois, int jour, int heure, double latitude, double longitude, double pression, double u, double v)
 		{
             Date uneDate = this.rechercherDate(annee, mois, jour, heure);
             Point unPoint;
@@ -73,10 +69,8 @@ namespace Donnee
                 unPoint = uneDate.recherchePoint(latitude, longitude);
                 if (unPoint != null)
                 {
-                    unPoint.leVent.Direction = direction;
-                    unPoint.leVent.U = u;
-                    unPoint.leVent.V = v;
-                    unPoint.leVent.Vitesse = vitesse;
+                    Vent unVent = new Vent(u, v);
+                    unPoint.leVent = unVent;
                     unPoint.Pression = pression;
                     return true;
                 }
@@ -110,10 +104,10 @@ namespace Donnee
             return unVent;
         }
 
-		public virtual bool modifierZone(int annee, int mois, int jour, int heure, double lat1, double long1, double lat2, double long2, double pression, double direction, double u, double v, double vitesse)
+		public virtual bool modifierZone(int annee, int mois, int jour, int heure, double lat1, double long1, double lat2, double long2, double pression, double u, double v)
 		{
             Date uneDate = this.rechercherDate(annee, mois, jour, heure);
-            Vent unVent = new Vent(direction, u, v, vitesse);
+            Vent unVent = new Vent(u, v);
             if (uneDate != null)
             {
                 foreach (Point unPoint in uneDate.lesPoints)
@@ -131,9 +125,9 @@ namespace Donnee
             return false;
         }
 
-		public virtual IList<Point> getZone(int annee, int mois, int jour, int heure, double lat1, double long1, double lat2, double long2, double pression, double direction, double u, double v, double vitesse)
+		public virtual IList<Point> getZone(int annee, int mois, int jour, int heure, double lat1, double long1, double lat2, double long2)
 		{
-            List<Point> res = null;
+            List<Point> res = new List<Point>();
             Date uneDate = this.rechercherDate(annee, mois, jour, heure);
             if (uneDate!= null)
             {

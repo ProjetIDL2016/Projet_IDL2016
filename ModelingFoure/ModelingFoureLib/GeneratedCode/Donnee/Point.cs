@@ -4,7 +4,7 @@
 //     Les modifications apportées à ce fichier seront perdues si le code est régénéré.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace Donnee
+namespace donnee
 {
 	using System;
 	using System.Collections.Generic;

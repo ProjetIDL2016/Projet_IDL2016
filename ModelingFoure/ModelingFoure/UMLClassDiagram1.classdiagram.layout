@@ -3,7 +3,7 @@
   <logicalClassDesignerModelMoniker Id="41d0e1ec-efe5-4e9a-8469-3d44b3a26e33" />
   <nestedChildShapes>
     <packageShape Id="d5660064-6840-49e4-91df-0e8fb8b27cc2" absoluteBounds="0.75, 0.875, 8.625, 6.75" customColor="255, 249, 230" hideQualifiedName="false">
-      <packageMoniker Id="e3b75cbd-5226-48d5-bea1-cc00530b5622" LastKnownName="Donnee" />
+      <packageMoniker Id="e3b75cbd-5226-48d5-bea1-cc00530b5622" LastKnownName="donnee" />
       <nestedChildShapes>
         <classShape Id="e7449f4e-3fd1-4eda-845f-47ba1151bc89" absoluteBounds="4.5, 5.625, 1.5, 1.6683043545484546" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
           <classMoniker Id="7601c2a8-0923-4bb7-97e4-a360fedcbe77" LastKnownName="Point" />
@@ -35,7 +35,7 @@
         </classShape>
       </nestedChildShapes>
     </packageShape>
-    <associationConnector edgePoints="[(6 : 6.45915217727423); (7.75 : 6.45915217727423)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+    <associationConnector edgePoints="[(6 : 6.45915217727423); (7.75 : 6.45915217727423)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
       <associationMoniker Id="7e2e2e44-7e71-4657-9b35-2ad45d7ca743" />
       <relativeChildShapes />
       <nodes>
@@ -43,7 +43,7 @@
         <classShapeMoniker Id="1f6db1ef-23d6-42d2-9eae-113de44f46ee" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.5 : 6.45915217727423); (4.5 : 6.45915217727423)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(2.5 : 6.45915217727423); (4.5 : 6.45915217727423)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="e2217cf1-b642-4574-b778-54ca72dca7b5" />
       <relativeChildShapes />
       <nodes>
@@ -51,7 +51,7 @@
         <classShapeMoniker Id="e7449f4e-3fd1-4eda-845f-47ba1151bc89" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(1.75 : 3.84408557971319); (1.75 : 5.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(1.75 : 3.84408557971319); (1.75 : 5.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="86291f84-ecce-416c-9e1a-bb0b1ab1d1b2" />
       <relativeChildShapes />
       <nodes>

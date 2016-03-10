@@ -2,7 +2,7 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="e7596fd2-bca1-4d7d-94af-6944e36889f8"
-  name="Donnee" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  name="donnee" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <packagedElements>
     <packageHasNamedElement>
       <class
@@ -1535,19 +1535,6 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="bf3a68ea-edf0-4c35-b11c-99c51664d7de"
-                  name="direction"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fc19f108-b75f-4941-81b6-f8b70ee67f4d"
                   name="u"
                   direction="In">
                   <type_NamedElement>
@@ -1560,21 +1547,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="9a1f1a82-c429-4274-aa08-247cd6861bb1"
+                  Id="fc19f108-b75f-4941-81b6-f8b70ee67f4d"
                   name="v"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9f4ba1fe-3169-4a30-8128-154dc6eaf8c1"
-                  name="vitesse"
                   direction="In">
                   <type_NamedElement>
                     <undefinedTypeMoniker
@@ -1876,19 +1850,6 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="569d73ea-b8b7-45af-9cab-26bdff1b977c"
-                  name="direction"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1e2e69ae-1b92-43a4-a1da-bfbb1fae11c9"
                   name="u"
                   direction="In">
                   <type_NamedElement>
@@ -1901,21 +1862,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="a996be77-e8a7-493f-b611-09bcf91c0d85"
+                  Id="1e2e69ae-1b92-43a4-a1da-bfbb1fae11c9"
                   name="v"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="004b61a7-e087-49a6-8a42-713d64c9ef41"
-                  name="vitesse"
                   direction="In">
                   <type_NamedElement>
                     <undefinedTypeMoniker
@@ -2424,19 +2372,6 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="653d22a2-feee-472e-8b60-9636c7da14b7"
-                  name="direction"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f85aea92-0980-4233-ac2e-ee8da8c926b2"
                   name="u"
                   direction="In">
                   <type_NamedElement>
@@ -2449,21 +2384,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="645da586-73e8-489d-9516-889f1656575e"
+                  Id="f85aea92-0980-4233-ac2e-ee8da8c926b2"
                   name="v"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fe98f286-5ad1-4533-9115-011b15201167"
-                  name="vitesse"
                   direction="In">
                   <type_NamedElement>
                     <undefinedTypeMoniker
@@ -2641,71 +2563,6 @@
                 <parameter
                   Id="5482e64d-2790-4627-afd9-2942ab2c6a29"
                   name="long2"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="47db88a7-9abb-4064-92bd-c05b3eda3e85"
-                  name="pression"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="6e260586-b1c4-458c-8ae6-c6a033304c42"
-                  name="direction"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="667221e7-554a-4910-92cf-9ebe0ba299d5"
-                  name="u"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="30804e9e-1d2b-4a63-b9d1-c68c2174f6c0"
-                  name="v"
-                  direction="In">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ed714c8c-a072-427d-8852-779147f21818"
-                      LastKnownName="double"
-                      LastKnownLocation="ModelingFoure.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="ee469a76-7908-4e82-9ee9-826c45a63330"
-                  name="vitesse"
                   direction="In">
                   <type_NamedElement>
                     <undefinedTypeMoniker

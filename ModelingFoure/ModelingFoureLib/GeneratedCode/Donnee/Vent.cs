@@ -4,7 +4,7 @@
 //     Les modifications apportées à ce fichier seront perdues si le code est régénéré.
 // </auto-generated>
 //------------------------------------------------------------------------------
-namespace Donnee
+namespace donnee
 {
 	using System;
 	using System.Collections.Generic;
@@ -13,11 +13,11 @@ namespace Donnee
 
 	public class Vent
 	{
-        public Vent (double dir, double u, double v, double vit) {
-            this.Direction = dir;
+        public Vent (double u, double v) {
+            this.Direction = conversion.Conversion.directionVent(u, v);
             this.U = u;
             this.V = v;
-            this.Vitesse = vit;
+            this.Vitesse = conversion.Conversion.vitesseVent(u, v);
         }
 
 		public virtual double U

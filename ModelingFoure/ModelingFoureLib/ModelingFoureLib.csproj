@@ -40,12 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeneratedCode\Donnee\Date.cs" />
-    <Compile Include="GeneratedCode\Donnee\Point.cs" />
-    <Compile Include="GeneratedCode\Donnee\Previsions.cs" />
-    <Compile Include="GeneratedCode\Donnee\Vent.cs" />
+    <Compile Include="GeneratedCode\conversion\Conversion.cs" />
+    <Compile Include="GeneratedCode\donnee\Date.cs" />
+    <Compile Include="GeneratedCode\donnee\Point.cs" />
+    <Compile Include="GeneratedCode\donnee\Previsions.cs" />
+    <Compile Include="GeneratedCode\donnee\Vent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

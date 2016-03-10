@@ -159,7 +159,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasPackages>
-      <package Id="e3b75cbd-5226-48d5-bea1-cc00530b5622" name="Donnee">
+      <package Id="e3b75cbd-5226-48d5-bea1-cc00530b5622" name="donnee">
         <elementDefinition Id="e7596fd2-bca1-4d7d-94af-6944e36889f8" />
         <packagedElements>
           <packageHasNamedElement>
@@ -1242,7 +1242,7 @@
                       </parameter>
                     </operationHasOwnedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="a5bdf5ac-526a-424a-9ff6-2ec4a57e2886" name="direction" direction="In">
+                      <parameter Id="a5bdf5ac-526a-424a-9ff6-2ec4a57e2886" name="u" direction="In">
                         <elementDefinition Id="bf3a68ea-edf0-4c35-b11c-99c51664d7de" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
@@ -1250,24 +1250,8 @@
                       </parameter>
                     </operationHasOwnedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="65f19ea6-8090-4869-b3d6-dee08279f409" name="u" direction="In">
+                      <parameter Id="65f19ea6-8090-4869-b3d6-dee08279f409" name="v" direction="In">
                         <elementDefinition Id="fc19f108-b75f-4941-81b6-f8b70ee67f4d" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="485dd367-bc97-4fd2-9290-6413fbe9ceeb" name="v" direction="In">
-                        <elementDefinition Id="9a1f1a82-c429-4274-aa08-247cd6861bb1" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="8435376b-a2f2-4625-92c4-eec11ddb0cba" name="vitesse" direction="In">
-                        <elementDefinition Id="9f4ba1fe-3169-4a30-8128-154dc6eaf8c1" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                         </type_NamedElement>
@@ -1474,7 +1458,7 @@
                       </parameter>
                     </operationHasOwnedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="c80b838b-1750-4072-a81e-60d80c60ecfa" name="direction" direction="In">
+                      <parameter Id="c80b838b-1750-4072-a81e-60d80c60ecfa" name="u" direction="In">
                         <elementDefinition Id="569d73ea-b8b7-45af-9cab-26bdff1b977c" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
@@ -1482,24 +1466,8 @@
                       </parameter>
                     </operationHasOwnedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="32f0ea66-c815-40ed-b156-d24a2767840b" name="u" direction="In">
+                      <parameter Id="32f0ea66-c815-40ed-b156-d24a2767840b" name="v" direction="In">
                         <elementDefinition Id="1e2e69ae-1b92-43a4-a1da-bfbb1fae11c9" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="eec0c067-7408-4528-b2b1-decff3d9cc9f" name="v" direction="In">
-                        <elementDefinition Id="a996be77-e8a7-493f-b611-09bcf91c0d85" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="a07241a9-e78e-4c50-81a6-790d10749605" name="vitesse" direction="In">
-                        <elementDefinition Id="004b61a7-e087-49a6-8a42-713d64c9ef41" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                         </type_NamedElement>
@@ -1842,7 +1810,7 @@
                       </parameter>
                     </operationHasOwnedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="382602ff-45ca-40f0-8c00-40f2b90f14be" name="direction" direction="In">
+                      <parameter Id="382602ff-45ca-40f0-8c00-40f2b90f14be" name="u" direction="In">
                         <elementDefinition Id="653d22a2-feee-472e-8b60-9636c7da14b7" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
@@ -1850,24 +1818,8 @@
                       </parameter>
                     </operationHasOwnedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="09d3be0b-5f94-4f63-a1f9-7b6efdc96fac" name="u" direction="In">
+                      <parameter Id="09d3be0b-5f94-4f63-a1f9-7b6efdc96fac" name="v" direction="In">
                         <elementDefinition Id="f85aea92-0980-4233-ac2e-ee8da8c926b2" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="22b9d22a-7c4f-4593-a2f5-aec90e466b71" name="v" direction="In">
-                        <elementDefinition Id="645da586-73e8-489d-9516-889f1656575e" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="f6f108d0-bd0f-4be8-ae0f-0c5cb112e0a7" name="vitesse" direction="In">
-                        <elementDefinition Id="fe98f286-5ad1-4533-9115-011b15201167" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                         </type_NamedElement>
@@ -1988,46 +1940,6 @@
                     <operationHasOwnedParameters>
                       <parameter Id="83619c40-9b25-4f3a-abe7-307f002fa2cc" name="long2" direction="In">
                         <elementDefinition Id="5482e64d-2790-4627-afd9-2942ab2c6a29" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="6c172130-5ac3-49bd-8b66-1ef68331441a" name="pression" direction="In">
-                        <elementDefinition Id="47db88a7-9abb-4064-92bd-c05b3eda3e85" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="f0ffde3b-f719-45d8-b8de-5f055c67ed89" name="direction" direction="In">
-                        <elementDefinition Id="6e260586-b1c4-458c-8ae6-c6a033304c42" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="79030a78-25d6-45f7-a23a-064a2cdeb383" name="u" direction="In">
-                        <elementDefinition Id="667221e7-554a-4910-92cf-9ebe0ba299d5" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="d6b23aac-0161-4be1-bda2-7a27f4fafcdb" name="v" direction="In">
-                        <elementDefinition Id="30804e9e-1d2b-4a63-b9d1-c68c2174f6c0" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="86955af1-ddd9-406e-be71-fd77d474eaf4" name="vitesse" direction="In">
-                        <elementDefinition Id="ee469a76-7908-4e82-9ee9-826c45a63330" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="3e6cf882-4d62-464e-9159-f6184f922702" LastKnownName="double" />
                         </type_NamedElement>
