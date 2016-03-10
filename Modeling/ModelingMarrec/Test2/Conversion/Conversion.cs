@@ -90,6 +90,20 @@ namespace Test2
             return vitesse;
         }
 
+        public static void contraste(double vitesse, double valeur)
+        {
+            double upContraste = 1 + (valeur / 100);
+            double downConstrate = 1 - (valeur / 100);
+            if (vitesse > 110)
+            {
+                vitesse = vitesse * upContraste;
+            }
+            else
+            {
+                vitesse = vitesse * downConstrate;
+            }
+        }
+
     }
 }
 
