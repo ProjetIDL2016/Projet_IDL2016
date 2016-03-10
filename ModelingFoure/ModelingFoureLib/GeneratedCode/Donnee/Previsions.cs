@@ -13,6 +13,10 @@ namespace Donnee
 
 	public class Previsions
 	{
+        public Previsions ()
+        {
+
+        }
 		public virtual IList<Date> lesDates
 		{
 			get;
@@ -166,6 +170,16 @@ namespace Donnee
             return null;
         }
 
+
+        public String toString()
+        {
+            String res = null;
+            foreach(Date uneDate in lesDates)
+            {
+                res += uneDate.toString();
+            }
+            return res;
+        }
 	}
 }
 

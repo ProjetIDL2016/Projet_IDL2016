@@ -63,6 +63,16 @@ namespace Donnee
             return null;
 		}
 
+        public String toString()
+        {
+            String res = null;
+            foreach(Point unPoint in lesPoints)
+            {
+                res=+ this.Jour + "/" + this.Mois + "/" + this.Annee + " " + this.Heure + "h : " + unPoint.toString();
+            }
+            return res;
+        }
+
 	}
 }
 

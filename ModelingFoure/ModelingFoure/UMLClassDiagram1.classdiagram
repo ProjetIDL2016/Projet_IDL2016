@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="41d0e1ec-efe5-4e9a-8469-3d44b3a26e33" name="UMLClassDiagram1" linkedPackageId="85ed9988-88b5-409f-8991-11c5c7608b4a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="41d0e1ec-efe5-4e9a-8469-3d44b3a26e33" name="UMLClassDiagram1" linkedPackageId="85ed9988-88b5-409f-8991-11c5c7608b4a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="4fcd889f-5c71-459e-99b3-544fc2a1ec2b" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="f5a4c1ea-1530-48b5-a5a0-f3bea9560b94" />
@@ -387,6 +387,21 @@
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="36e888b6-e88a-478d-87b9-0f220018591b" name="toString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="90074fd9-cb9a-429d-9d7c-5a010ea3c07e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cad714ef-4553-4a6f-8dcb-a545d4e40ecb" direction="Return">
+                        <elementDefinition Id="201748ce-d611-4df3-ae62-c51800fa4ca2" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="82618499-51d9-442e-9ac8-507034cfd24d" LastKnownName="String" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -752,6 +767,19 @@
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
+                <operation Id="d23fcc3a-5e5b-417c-b677-77a3cceb4bbd" name="toString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="446517bc-2f69-4ff9-937e-59034058f570" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="3b2033e0-b3cf-4549-b7bc-1f8e949b9806" direction="Return">
+                        <elementDefinition Id="2ecee2ae-fc5e-4875-8529-a6ede501a299" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d950e764-d816-4e2e-8df0-6de8f3f7cda9" LastKnownName="String" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
               </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
@@ -1017,6 +1045,21 @@
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="e732de1e-45da-499a-9fbf-136f4161e4ea" name="toString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="177d051e-d5fe-41aa-a90d-b0f27218dc5d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8aff8a5a-97a5-495f-b670-c5deb01f164f" direction="Return">
+                        <elementDefinition Id="c07b1de3-779b-47fb-8fc6-7e2b8978d7a6" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="0dc0d624-a9a3-4cb6-93f7-a66990ae0ad2" LastKnownName="String" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
@@ -2080,6 +2123,19 @@
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
+                <operation Id="8e01733a-a8ab-449e-a7e6-3a0dbf87a16a" name="toString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c66b147f-623f-44bf-808f-f5287cd58496" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f38e87ef-da19-453a-a7af-e232e396aabf" direction="Return">
+                        <elementDefinition Id="0c9eb2d5-c668-4342-8c94-a4862d6215fa" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="09ef4642-2843-4810-aa3b-e68d9b6bb7ba" LastKnownName="String" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
               </ownedOperationsInternal>
             </class>
           </packageHasNamedElement>
@@ -2109,6 +2165,26 @@
     <packageHasNamedElement>
       <referencedType Id="9e5532df-9313-4188-9a00-18cdf1c40fb2" name="Date" isAbstract="false" isLeaf="false" cachedFullName="ModelingFoure::Donnee::Date">
         <elementDefinition Id="d4b2cee7-cf08-4bfa-886a-ff2bafa63e8e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d950e764-d816-4e2e-8df0-6de8f3f7cda9" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="82618499-51d9-442e-9ac8-507034cfd24d" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0dc0d624-a9a3-4cb6-93f7-a66990ae0ad2" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="09ef4642-2843-4810-aa3b-e68d9b6bb7ba" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

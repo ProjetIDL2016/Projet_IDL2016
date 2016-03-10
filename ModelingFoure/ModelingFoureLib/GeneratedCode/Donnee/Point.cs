@@ -44,6 +44,13 @@ namespace Donnee
 			set;
 		}
 
+        public String toString()
+        {
+            String res = null;
+            res += "lat: " + this.Latitude + " long: " + this.Longitude + " p: " + this.Pression + " " + this.leVent.toString();
+            return res;
+        }
+
 	}
 }
 

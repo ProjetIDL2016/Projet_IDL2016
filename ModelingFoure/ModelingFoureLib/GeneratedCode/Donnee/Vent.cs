@@ -44,6 +44,13 @@ namespace Donnee
 			set;
 		}
 
+        public String toString()
+        {
+            String res = null;
+            res += "dir: " + this.Direction + " v: " + this.Vitesse;
+            return res;
+        }
+
 	}
 }
 
