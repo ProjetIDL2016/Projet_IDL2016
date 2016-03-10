@@ -5,10 +5,9 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingMarrec", "ModelingMarrec\ModelingMarrec.modelproj", "{F81BD633-102A-471E-BD5B-8C9C1713F2F3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conversion", "Conversion", "{6E6D8909-0F3B-4D70-914F-B2772DE89B43}"
-	ProjectSection(SolutionItems) = preProject
-		Conversion.cs = Conversion.cs
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BDE67786-7040-4A2D-94A9-943503C1D779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test2", "Test2\Test2.csproj", "{55020B76-9E71-4D8B-9E27-63E2D7EAE89F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +19,14 @@ Global
 		{F81BD633-102A-471E-BD5B-8C9C1713F2F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F81BD633-102A-471E-BD5B-8C9C1713F2F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F81BD633-102A-471E-BD5B-8C9C1713F2F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE67786-7040-4A2D-94A9-943503C1D779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE67786-7040-4A2D-94A9-943503C1D779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE67786-7040-4A2D-94A9-943503C1D779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE67786-7040-4A2D-94A9-943503C1D779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55020B76-9E71-4D8B-9E27-63E2D7EAE89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55020B76-9E71-4D8B-9E27-63E2D7EAE89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55020B76-9E71-4D8B-9E27-63E2D7EAE89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55020B76-9E71-4D8B-9E27-63E2D7EAE89F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
