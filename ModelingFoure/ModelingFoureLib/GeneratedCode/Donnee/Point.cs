@@ -44,10 +44,10 @@ namespace Donnee
 			set;
 		}
 
-        public String toString()
+        override public String ToString()
         {
-            String res = null;
-            res += "lat: " + this.Latitude + " long: " + this.Longitude + " p: " + this.Pression + " " + this.leVent.toString();
+            String res = String.Empty;
+            res += "lat: " + this.Latitude + " long: " + this.Longitude + " p: " + this.Pression + " " + this.leVent.ToString();
             return res;
         }
 

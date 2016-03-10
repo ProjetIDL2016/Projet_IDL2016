@@ -44,9 +44,9 @@ namespace Donnee
 			set;
 		}
 
-        public String toString()
+        override public String ToString()
         {
-            String res = null;
+            String res = String.Empty;
             res += "dir: " + this.Direction + " v: " + this.Vitesse;
             return res;
         }

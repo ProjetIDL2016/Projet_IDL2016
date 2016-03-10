@@ -62,13 +62,25 @@ namespace Donnee
             }
             return null;
 		}
-
-        public String toString()
+        
+        override public String ToString()
         {
-            String res = null;
-            foreach(Point unPoint in lesPoints)
+            String res = String.Empty;
+            if (lesPoints != null)
             {
-                res=+ this.Jour + "/" + this.Mois + "/" + this.Annee + " " + this.Heure + "h : " + unPoint.toString();
+                foreach (Point unPoint in lesPoints)
+                {
+                    if (this.Jour < 10)
+                    {
+                        res += "0";
+                    }
+                    res += this.Jour + "/";
+                    if (this.Mois < 10)
+                    {
+                        res += "0";
+                    }
+                    res += this.Mois + "/" + this.Annee + " " + this.Heure + "h : " + unPoint.ToString() + Environment.NewLine;
+                }
             }
             return res;
         }

@@ -7,6 +7,8 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingFoure", "ModelingFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelingFoureLib", "ModelingFoureLib\ModelingFoureLib.csproj", "{8F038E83-EF43-4638-9F03-967197555CB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testDonnee", "testDonnee\testDonnee.csproj", "{7E47A6C3-E81B-4AB1-8C14-6EED5B57AEBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8F038E83-EF43-4638-9F03-967197555CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F038E83-EF43-4638-9F03-967197555CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F038E83-EF43-4638-9F03-967197555CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E47A6C3-E81B-4AB1-8C14-6EED5B57AEBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E47A6C3-E81B-4AB1-8C14-6EED5B57AEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E47A6C3-E81B-4AB1-8C14-6EED5B57AEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E47A6C3-E81B-4AB1-8C14-6EED5B57AEBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

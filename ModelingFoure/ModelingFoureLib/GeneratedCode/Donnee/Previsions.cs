@@ -33,7 +33,9 @@ namespace Donnee
                 uneDate = new Date(annee, mois, jour, heure);
                 unVent = new Vent(direction, u, v, vitesse);
                 unPoint = new Point(latitude, longitude, unVent, pression);
+                uneDate.lesPoints = new List<Point>();
                 uneDate.lesPoints.Add(unPoint);
+                if (lesDates == null) lesDates = new List<Date>();
                 lesDates.Add(uneDate);
             }
             else
@@ -151,17 +153,20 @@ namespace Donnee
 
 		public virtual Date rechercherDate(int annee, int mois, int jour, int heure)
 		{
-            foreach (Date uneDate in lesDates)
+            if(lesDates != null)
             {
-                if (uneDate.Annee == annee)
+                foreach (Date uneDate in lesDates)
                 {
-                    if (uneDate.Mois == mois)
+                    if (uneDate.Annee == annee)
                     {
-                        if (uneDate.Jour == jour)
+                        if (uneDate.Mois == mois)
                         {
-                            if (uneDate.Heure == heure)
+                            if (uneDate.Jour == jour)
                             {
-                                return uneDate;
+                                if (uneDate.Heure == heure)
+                                {
+                                    return uneDate;
+                                }
                             }
                         }
                     }
@@ -171,12 +176,13 @@ namespace Donnee
         }
 
 
-        public String toString()
+
+        override public String ToString()
         {
-            String res = null;
+            String res = String.Empty;
             foreach(Date uneDate in lesDates)
             {
-                res += uneDate.toString();
+                res += uneDate.ToString();
             }
             return res;
         }
